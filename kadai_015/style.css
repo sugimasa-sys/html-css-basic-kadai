@@ -10,8 +10,8 @@ body {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2em;
-  /* ルート要素のフォントサイズの2倍 */
+  font-size: 2rem;
+  /* 上記修正箇所１ */
   letter-spacing: 1.2em;
   /* フォントサイズの1.2倍 */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -39,12 +39,6 @@ h2.blue {
 }
 
 #basic p {
-  font-weight: normal;
-  /* 初期状態で通常の太さ */
-}
-
-/* 「生年月日」と「血液型」の次の p 要素のみ太字に設定 */
-#basic h2.blue+p,
-#basic h2.pink+p:nth-of-type(3) {
   font-weight: bold;
+  /* 上記修正箇所２ */
 }
