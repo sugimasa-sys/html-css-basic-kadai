@@ -1,0 +1,50 @@
+:root {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  /* ルート要素のフォントサイズの2倍 */
+  letter-spacing: 1.2em;
+  /* フォントサイズの1.2倍 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgb(115, 115, 114);
+}
+
+h1 .blue {
+  color: skyblue;
+  /* スカイブルー */
+}
+
+h1 .pink {
+  color: rgb(255, 192, 203);
+  /* ピンク */
+}
+
+h2.pink {
+  color: rgb(255, 192, 203);
+  /* ピンク */
+}
+
+h2.blue {
+  color: skyblue;
+  /* スカイブルー */
+}
+
+#basic p {
+  font-weight: normal;
+  /* 初期状態で通常の太さ */
+}
+
+/* 「生年月日」と「血液型」の次の p 要素のみ太字に設定 */
+#basic h2.blue+p,
+#basic h2.pink+p:nth-of-type(3) {
+  font-weight: bold;
+}
